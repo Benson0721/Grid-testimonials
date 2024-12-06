@@ -45,7 +45,7 @@ const sections = [
 export default function GridSection() {
   return (
     <>
-      <div className="layout" role="">
+      <div className="layout" role="region" aria-label="all-post">
         {sections.map((section, idx) => {
           return <Section section={section} id={idx} />;
         })}

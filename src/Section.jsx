@@ -8,7 +8,7 @@ export default function Section({ section }) {
       className={`section-border ${Nickname == "daniel" ? "quotation" : ""}`}
       id={Nickname}
     >
-      <div className="box">
+      <div className="box" role="region" aria-label="article-area">
         <header className="header">
           <figure
             className={`headshot ${
