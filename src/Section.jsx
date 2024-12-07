@@ -35,11 +35,9 @@ export default function Section({ section }) {
             <p className="cert">Verified Graduate</p>
           </div>
         </header>
-        <section className="summary">
-          <b>{Summary}</b>
-        </section>
-        <section className="content">
-          <p>{Content}</p>
+        <section>
+          <h2 className="summary">{Summary}</h2>
+          <p className="content">{Content}</p>
         </section>
       </div>
     </article>

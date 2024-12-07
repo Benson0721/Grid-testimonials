@@ -105,18 +105,18 @@
   font-size: 0.85rem;
   opacity: 0.5;
 }
-.section-border .box .summary {
+.section-border .box section {
   z-index: 1;
+}
+.section-border .box section .summary {
   font-size: 1.54rem;
   margin-bottom: 16px;
   line-height: 1.25;
-  max-inline-size: 45ch;
 }
-.section-border .box .content {
+.section-border .box section .content {
   opacity: 0.7;
   font-size: 1rem;
   line-height: 18px;
-  max-inline-size: 52ch;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -136,12 +136,6 @@
   }
   .section-border .box {
     max-width: none;
-  }
-  .section-border .box .summary {
-    max-inline-size: 50ch;
-  }
-  .section-border .box .content {
-    max-inline-size: 74ch;
   }
 }
 /*# sourceMappingURL=Section.css.map */

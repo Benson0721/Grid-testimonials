@@ -103,18 +103,18 @@ $LightPur: #a775f1;
         }
       }
     }
-    .summary {
+    section {
       z-index: 1;
-      font-size: 1.54rem;
-      margin-bottom: 16px;
-      line-height: 1.25;
-      max-inline-size: 45ch;
-    }
-    .content {
-      opacity: 0.7;
-      font-size: 1rem;
-      line-height: 18px;
-      max-inline-size: 52ch;
+      .summary {
+        font-size: 1.54rem;
+        margin-bottom: 16px;
+        line-height: 1.25;
+      }
+      .content {
+        opacity: 0.7;
+        font-size: 1rem;
+        line-height: 18px;
+      }
     }
   }
 }
@@ -137,13 +137,6 @@ $LightPur: #a775f1;
     height: 266px;
     .box {
       max-width: none;
-
-      .summary {
-        max-inline-size: 50ch;
-      }
-      .content {
-        max-inline-size: 74ch;
-      }
     }
   }
 }
