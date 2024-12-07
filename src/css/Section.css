@@ -16,13 +16,13 @@
 }
 
 #jonathan.section-border {
-  color: hsl(0, 0%, 100%);
   background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
 }
 
 #jeanette.section-border {
-  color: hsl(217, 19%, 35%);
   background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
 
 #patrick.section-border {
@@ -42,28 +42,35 @@
 }
 
 #kira.section-border {
-  color: hsl(217, 19%, 35%);
   background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
 
 .purple {
   border: 2px solid #a775f1;
 }
 
+.quotation {
+  z-index: 0;
+  position: absolute;
+  top: -20px;
+  left: 165px;
+}
+
 .section-border {
-  width: 100%;
   border-radius: 8px;
-  -webkit-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
-          box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+  width: 100%;
   max-width: 327px;
   margin-top: 24px;
+  -webkit-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+          box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
 }
 .section-border .box {
+  position: relative;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
-  margin: 26px 32px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -71,6 +78,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 26px 32px;
   max-width: 263px;
 }
 .section-border .box .header {
@@ -80,10 +88,10 @@
   margin-bottom: 18px;
 }
 .section-border .box .header .headshot {
-  overflow: hidden;
+  border-radius: 50%;
   width: 28px;
   height: 28px;
-  border-radius: 50%;
+  overflow: hidden;
   margin-right: 17px;
 }
 .section-border .box .header .headshot img {
@@ -98,6 +106,7 @@
   opacity: 0.5;
 }
 .section-border .box .summary {
+  z-index: 1;
   font-size: 1.54rem;
   margin-bottom: 16px;
   line-height: 1.25;
@@ -117,19 +126,21 @@
   #kira.section-border {
     height: 572px;
   }
+  .quotation {
+    left: 330px;
+  }
   .section-border {
-    height: 266px;
     margin-top: 0px;
     max-width: 540px;
+    height: 266px;
   }
   .section-border .box {
     max-width: none;
   }
   .section-border .box .summary {
-    max-inline-size: 45ch;
+    max-inline-size: 50ch;
   }
   .section-border .box .content {
     max-inline-size: 74ch;
   }
-}
-/*# sourceMappingURL=Section.css.map */
+}/*# sourceMappingURL=Section.css.map */

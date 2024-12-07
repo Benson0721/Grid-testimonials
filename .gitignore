@@ -14,7 +14,7 @@ dist-ssr
 deploy.sh
 design
 .vscode
-.src/scss
+./src/scss
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

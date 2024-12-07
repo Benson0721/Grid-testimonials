@@ -47,7 +47,7 @@ export default function GridSection() {
     <>
       <div className="layout" role="region" aria-label="all-post">
         {sections.map((section, idx) => {
-          return <Section section={section} id={idx} />;
+          return <Section section={section} key={idx} />;
         })}
       </div>
     </>

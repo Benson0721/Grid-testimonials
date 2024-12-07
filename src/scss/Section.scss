@@ -29,12 +29,10 @@ $LightPur: #a775f1;
   background-color: $DarkGray;
   color: $White;
 }
-
 #jeanette.section-border {
   background-color: $White;
   color: $DarkGray;
 }
-
 #patrick.section-border {
   background-color: $Black;
   .header {
@@ -58,18 +56,23 @@ $LightPur: #a775f1;
   background-color: $White;
   color: $DarkGray;
 }
-
 .purple {
   border: 2px solid $LightPur;
 }
-
+.quotation {
+  z-index: 0;
+  position: absolute;
+  top: -20px;
+  left: 165px;
+}
 .section-border {
   border-radius: 8px;
   width: 100%;
   max-width: 327px;
   margin-top: 24px;
-  box-shadow: 40px 60px 50px -47px rgba($color: #48556A, $alpha: 0.25);
+  box-shadow: 40px 60px 50px -47px rgba($color: #48556a, $alpha: 0.25);
   .box {
+    position: relative;
     width: auto;
     display: flex;
     justify-content: center;
@@ -101,6 +104,7 @@ $LightPur: #a775f1;
       }
     }
     .summary {
+      z-index: 1;
       font-size: 1.54rem;
       margin-bottom: 16px;
       line-height: 1.25;
@@ -124,6 +128,9 @@ $LightPur: #a775f1;
   #kira.section-border {
     height: 572px;
   }
+  .quotation {
+    left: 330px;
+  }
   .section-border {
     margin-top: 0px;
     max-width: 540px;
@@ -132,7 +139,7 @@ $LightPur: #a775f1;
       max-width: none;
 
       .summary {
-        max-inline-size: 45ch;
+        max-inline-size: 50ch;
       }
       .content {
         max-inline-size: 74ch;
