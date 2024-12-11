@@ -13,22 +13,28 @@
     grid-template-rows: repeat(2, 262px);
     grid-gap: 30px;
     margin-bottom: 5%;
-    #daniel {
-      grid-area: 1 / 1 / 2 /3;
-    }
-    #jonathan {
-      grid-area: 1 / 3 / 2 / 4;
-    }
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+    .section {
+      width: auto;
+      max-width: none;
+      &--daniel {
+        grid-area: daniel;
+      }
+      &--jonathan {
+        grid-area: jonathan;
+      }
+      &--jeanette {
+        grid-area: jeanette;
+      }
 
-    #jeanette {
-      grid-area: 2 / 1 / 3 / 2;
-    }
-
-    #patrick {
-      grid-area: 2 / 2 / 3 / 4;
-    }
-    #kira {
-      grid-area: 1 / 4 / 3 / 5;
+      &--patrick {
+        grid-area: patrick;
+      }
+      &--kira {
+        grid-area: kira;
+      }
     }
   }
 }

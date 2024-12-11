@@ -1,45 +1,31 @@
 import "./css/Section.css";
 
-export default function Section({ section }) {
-  const { Name, Summary, Content, Nickname } = section;
+export default function Section({ data }) {
+  const { Name, Summary, Content, Nickname } = data;
 
   return (
-    <article className="section-border" id={Nickname}>
-      <div className="box" role="region" aria-label="article-area">
-        {Nickname == "daniel" ? (
-          <svg
-            width="104"
-            height="102"
-            xmlns="http://www.w3.org/2000/svg"
-            className="quotation"
-          >
-            <path
-              d="M104 102V59.727H84.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42-9.287 6.125-13.61C95.01 25.86 98.909 22.257 104 19.375V0c-9.758 4.27-17.712 9.874-23.864 16.813-6.151 6.939-10.712 14.545-13.681 22.818C63.485 47.904 62 59.941 62 75.74V102h42zm-62 0V59.727H22.114c0-5.871.689-11.182 2.068-15.933 1.379-4.75 3.42-9.287 6.125-13.61C33.01 25.86 36.909 22.257 42 19.375V0c-9.652 4.27-17.58 9.874-23.784 16.813C12.01 23.752 7.424 31.358 4.455 39.631 1.485 47.904 0 59.941 0 75.74V102h42z"
-              fill="#A775F1"
-              fill-rule="nonzero"
-            />
-          </svg>
-        ) : (
-          ""
-        )}
-        <header className="header">
-          <figure
-            className={`headshot ${
-              Nickname === "daniel" || Nickname === "patrick" ? "purple" : ""
-            }`}
-          >
-            <img src={`./images/image-${Nickname}.jpg`} alt="headshot" />
-          </figure>
-          <div className="text-field">
-            <b className="name">{Name}</b>
-            <p className="cert">Verified Graduate</p>
-          </div>
-        </header>
-        <section>
-          <h2 className="summary">{Summary}</h2>
-          <p className="content">{Content}</p>
+    <article
+      className={`section section--${Nickname} ${
+        Nickname == "daniel" ? "section--with-bg-img" : ""
+      }`}
+    >
+      <header className="section__header">
+        <figure className={`section__headshot`}>
+          <img
+            src={`./images/image-${Nickname}.jpg`}
+            alt="headshot"
+            className="section__headshot-image"
+          />
+        </figure>
+        <section className="section__person">
+          <b className={`section__name `}>{Name}</b>
+          <p className={`section__cert `}>Verified Graduate</p>
         </section>
-      </div>
+      </header>
+      <section>
+        <h2 className={`section__summary`}>{Summary}</h2>
+        <p className={`section__content`}>{Content}</p>
+      </section>
     </article>
   );
 }

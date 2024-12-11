@@ -1,141 +1,113 @@
-#daniel.section-border {
+.section {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 265px;
+  padding: 26px 32px 32px;
+  margin-top: 24px;
+  -webkit-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+          box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+.section--daniel {
   background-color: hsl(263, 55%, 52%);
+  z-index: 1;
 }
-#daniel.section-border .header .text-field .name {
+.section--daniel .section__header {
   color: hsl(0, 0%, 100%);
 }
-#daniel.section-border .header .text-field .cert {
-  color: hsl(0, 0%, 100%);
+.section--daniel .section__header .section__headshot {
+  border: 2px solid #a775f1;
 }
-#daniel.section-border .summary {
+.section--daniel .section__summary {
   color: hsl(0, 0%, 100%);
   margin-bottom: 40px;
 }
-#daniel.section-border .content {
+.section--daniel .section__content {
   color: hsl(0, 0%, 81%);
 }
-
-#jonathan.section-border {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(217, 19%, 35%);
-}
-
-#jeanette.section-border {
-  color: hsl(217, 19%, 35%);
+.section--jeanette {
   background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
 }
-
-#patrick.section-border {
+.section--jonathan {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(0, 0%, 100%);
+}
+.section--kira {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.section--patrick {
   background-color: hsl(219, 29%, 14%);
 }
-#patrick.section-border .header .text-field .name {
+.section--patrick .section__header {
   color: hsl(0, 0%, 100%);
 }
-#patrick.section-border .header .text-field .cert {
-  color: hsl(0, 0%, 100%);
-}
-#patrick.section-border .summary {
-  color: hsl(0, 0%, 81%);
-}
-#patrick.section-border .content {
-  color: hsl(0, 0%, 100%);
-}
-
-#kira.section-border {
-  color: hsl(217, 19%, 35%);
-  background-color: hsl(0, 0%, 100%);
-}
-
-.purple {
+.section--patrick .section__header .section__headshot {
   border: 2px solid #a775f1;
 }
-
-.quotation {
-  position: absolute;
+.section--patrick .section__summary {
+  color: hsl(0, 0%, 81%);
+}
+.section--patrick .section__content {
+  color: hsl(0, 0%, 100%);
+}
+.section--with-bg-img {
+  background-image: url("../../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 90% 3%;
   z-index: 0;
-  top: -20px;
-  left: 165px;
 }
-
-.section-border {
-  width: 100%;
-  border-radius: 8px;
-  -webkit-box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
-          box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
-  max-width: 327px;
-  margin-top: 24px;
+.section__headshot {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  margin-right: 17px;
 }
-.section-border .box {
+.section__headshot-image {
+  width: inherit;
+  height: inherit;
+}
+.section__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  width: auto;
-  margin: 26px 32px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+.section__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 263px;
 }
-.section-border .box .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 18px;
+.section__name {
+  display: block;
+  line-height: 13px;
 }
-.section-border .box .header .headshot {
-  overflow: hidden;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  margin-right: 17px;
-}
-.section-border .box .header .headshot img {
-  width: inherit;
-  height: inherit;
-}
-.section-border .box .header .text-field .name {
-  font-size: 1rem;
-}
-.section-border .box .header .text-field .cert {
-  font-size: 0.85rem;
+.section__cert {
+  font-size: 11px;
   opacity: 0.5;
 }
-.section-border .box section {
-  z-index: 1;
+.section__summary {
+  font-size: 20px;
+  margin: 18px 0px;
 }
-.section-border .box section .summary {
-  font-size: 1.54rem;
-  margin-bottom: 16px;
-  line-height: 1.25;
-}
-.section-border .box section .content {
+.section__content {
   opacity: 0.7;
-  font-size: 1rem;
   line-height: 18px;
 }
 
 @media only screen and (min-width: 1440px) {
-  #daniel.section-border .summary {
+  .section {
+    margin-top: 0px;
+  }
+  .section--daniel .section__summary {
     margin-bottom: 16px;
   }
-  #kira.section-border {
-    height: 572px;
+  .section--with-bg-img {
+    background-position: 90% 3%;
   }
-  .quotation {
-    left: 330px;
-  }
-  .section-border {
-    height: 266px;
-    margin-top: 0px;
-    max-width: 540px;
-  }
-  .section-border .box {
-    max-width: none;
-  }
-}
-/*# sourceMappingURL=Section.css.map */
+}/*# sourceMappingURL=Section.css.map */
