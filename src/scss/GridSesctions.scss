@@ -1,40 +1,53 @@
 .layout {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, 327px);
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 10% 0;
+  gap: 30px;
+  margin: 5% 0;
+  grid-template-areas:
+    "daniel"
+    "jeanette"
+    "jonathan"
+    "patrick"
+    "kira";
+  .section {
+    width: auto;
+    max-width: none;
+    &--daniel {
+      grid-area: daniel;
+    }
+    &--jonathan {
+      grid-area: jonathan;
+    }
+    &--jeanette {
+      grid-area: jeanette;
+    }
+    &--patrick {
+      grid-area: patrick;
+    }
+    &--kira {
+      grid-area: kira;
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .layout {
+    grid-template-columns: repeat(2, minmax(0, 450px));
+    padding: 26px 32px 32px;
+    grid-template-areas:
+      "daniel daniel"
+      "jeanette jonathan"
+      "patrick patrick"
+      "kira kira";
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .layout {
-    display: grid;
     grid-template-columns: repeat(4, 255px);
     grid-template-rows: repeat(2, 262px);
-    grid-gap: 30px;
-    margin-bottom: 5%;
     grid-template-areas:
       "daniel daniel jonathan kira"
       "jeanette patrick patrick kira";
-    .section {
-      width: auto;
-      max-width: none;
-      &--daniel {
-        grid-area: daniel;
-      }
-      &--jonathan {
-        grid-area: jonathan;
-      }
-      &--jeanette {
-        grid-area: jeanette;
-      }
-
-      &--patrick {
-        grid-area: patrick;
-      }
-      &--kira {
-        grid-area: kira;
-      }
-    }
   }
 }

@@ -3,14 +3,13 @@ $DarkGray: hsl(217, 19%, 35%);
 $Black: hsl(219, 29%, 14%);
 $White: hsl(0, 0%, 100%);
 $LightGray: hsl(0, 0%, 81%);
-$LightPur: #a775f1;
+$LightPurple: #a775f1;
 //color part
 .section {
   border-radius: 8px;
   width: 100%;
   max-width: 265px;
   padding: 26px 32px 32px;
-  margin-top: 24px;
   box-shadow: 40px 60px 50px -47px rgba($color: #48556a, $alpha: 0.25);
   &--daniel {
     background-color: $Purple;
@@ -18,7 +17,7 @@ $LightPur: #a775f1;
     .section__header {
       color: $White;
       .section__headshot {
-        border: 2px solid $LightPur;
+        border: 2px solid $LightPurple;
       }
     }
     .section__summary {
@@ -46,7 +45,7 @@ $LightPur: #a775f1;
     .section__header {
       color: $White;
       .section__headshot {
-        border: 2px solid $LightPur;
+        border: 2px solid $LightPurple;
       }
     }
     .section__summary {
@@ -56,7 +55,7 @@ $LightPur: #a775f1;
       color: $White;
     }
   }
-  &--with-bg-img {
+  &--bg-patteen {
     background-image: url("../../images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
     background-size: auto;

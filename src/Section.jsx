@@ -6,7 +6,7 @@ export default function Section({ data }) {
   return (
     <article
       className={`section section--${Nickname} ${
-        Nickname == "daniel" ? "section--with-bg-img" : ""
+        Nickname == "daniel" ? "section--bg-pattern" : ""
       }`}
     >
       <header className="section__header">
