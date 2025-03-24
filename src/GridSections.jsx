@@ -1,6 +1,6 @@
-import "./css/GridSesctions.css";
 import Section from "./Section";
 import { datas } from "../datas";
+import "./scss/GridSesctions.scss";
 
 export default function GridSection() {
   return (

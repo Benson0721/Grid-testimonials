@@ -1,4 +1,4 @@
-import "./css/Section.css";
+import "./scss/Section.scss";
 
 export default function Section({ data }) {
   const { Name, Summary, Content, Nickname } = data;
